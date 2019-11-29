@@ -1,8 +1,8 @@
-let a:number = 123
-const h1 = document.createElement('h1')
-h1.innerHTML = 'bacra'
-document.body.appendChild(h1)
+# TS变量说明
 
+### JS类型
+
+```js
 // 1.定义数值类型
 let num:number = 123
 // 2.定义布尔类型
@@ -25,4 +25,9 @@ tuple = ["a", 2, false];
 // 7.定义对象
 let obj:object
 obj = {name:'Lison'}
+```
+
+注意，对象的定义并没有那么简单，如果此时输入`obj.name` 会报错。
+
+
 
