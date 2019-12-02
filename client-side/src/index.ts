@@ -12,7 +12,7 @@ let str:string = 'bacra'
 const first = "bacra"
 const last = "wu"
 str = `${first}${last}`
-console.log(str)
+// console.log(str)
 // 4.定义undefined和null
 let u:undefined = undefined
 let n:null = null
@@ -43,7 +43,7 @@ enum Roles{
     ADMIN,
     USER
 }
-console.log(Roles.SUPER_ADMIN ,Roles.ADMIN, Roles.USER)
+// console.log(Roles.SUPER_ADMIN ,Roles.ADMIN, Roles.USER)
 // 输出结果 —— 0,1,2
 
 // 可以修改起始数值
@@ -52,9 +52,9 @@ enum Roles2{
     ADMIN,
     USER
 }
-console.log(Roles2.SUPER_ADMIN ,Roles2.ADMIN, Roles2.USER)
+// console.log(Roles2.SUPER_ADMIN ,Roles2.ADMIN, Roles2.USER)
 // 输出结果 —— 1,2,3
-console.log(Roles2[3])
+// console.log(Roles2[3])
 // 输出结果 —— USER
 
 // 3.Any
@@ -95,8 +95,8 @@ const info2 = {
 }
 const lisonInfo = merge(info1,info2)
 lisonInfo.age = 20
-console.log(info2.age)
-console.log(lisonInfo.name,lisonInfo.age)
+// console.log(info2.age)
+// console.log(lisonInfo.name,lisonInfo.age)
 
 // Object.assgin也可以合并多个对象
 // 注意：在Object.assgin返回的对象中修改某个对象的属性，
@@ -107,8 +107,14 @@ const getLength = (content:string|number):number => {
     if(typeof content === "string") return content.length;
     else return content.toString().length;
 }
-console.log(getLength("abc"))
-console.log(getLength(123))
+// console.log(getLength("abc"))
+// console.log(getLength(123))
+
+// symbol类型
+const sym = Symbol()
+const sym1 = Symbol("bacra")
+// const sym2 = Symbol("bacra")
+// console.log(sym1===sym2)
 
 
 

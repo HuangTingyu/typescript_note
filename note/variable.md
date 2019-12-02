@@ -131,3 +131,16 @@ console.log(getLength("abc"))
 console.log(getLength(123))
 ```
 
+## symbol类型
+
+```js
+// symbol类型
+const sym = Symbol()
+const sym1 = Symbol("bacra")
+const sym2 = Symbol("bacra")
+console.log(sym1===sym2)
+// 输出结果：false
+```
+
+上面的例子，会输出 `false` 。Symbol会返回独一无二的值，虽然传入了相同的字符。
+
